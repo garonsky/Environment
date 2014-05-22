@@ -229,7 +229,7 @@ QT_ROOT='/opt/Qt5.3.0/'
 QT_BASE=$QT_ROOT'5.3/'
 
 QT_TOOL_BASE=$QT_ROOT'Tools'
-export QT_DIR=$QT_BASE'gcc_64'
+export QTDIR=$QT_BASE'gcc_64'
 alias "qtcreator"=$QT_TOOL_BASE'/bin/qtcreator'
 alias "qmake5"='$QT_DIR/bin/qmake'
 
