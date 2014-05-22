@@ -248,8 +248,8 @@ export PS1="\[\e[0;37m\][\[\e[1;31m\]\@\[\e[0;37m\]] \[\033[01;32m\]\u@\h \[\e[0
 
 # remove this when https://bugreports.qt-project.org/browse/QTBUG-32225 is resolved
 export LIBGL_ALWAYS_SOFTWARE=1
-export PATH=$PATH:/opt/Qt5.1.0/5.1.1/gcc_64/bin
-export QML_IMPORT_PATH=/opt/Qt5.1.1/5.1.1/gcc_64/qml
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/HPCCSystems/lib:~/HPCC2/build/Debug/libs 
+export PATH=$PATH:'$QT_DIR/bin/'
+export QML_IMPORT_PATH='$QT_BASE/qml'
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/HPCCSystems/lib:~/HPCC/build/Debug/libs 
 alias "cpnagios"="rm ~/Development/HPCC/HPCC-Platform/nagios-monitoring -r;cp -s ~/Development/HPCC/nagios-monitoring ~/Development/HPCC/HPCC-Platform -r"
 
