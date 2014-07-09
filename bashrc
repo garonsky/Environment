@@ -124,7 +124,6 @@ else
 fi
 }
 
-
 fff()
 {
 if [ -z "$1" ]
@@ -132,23 +131,26 @@ then
     echo "No search key."
 else
 
-    find ./ -iname '*.cpp'  -exec grep "$1" -nH {} \; -or -iname '*.h' -exec grep "$1" -nH {} \; -or -iname '*.ipp'  -exec grep "$1" -nH {} \; -or -iname '*.hpp'  -exec grep "$1" -nH {} \; -or -iname '*.c'  -exec grep "$1" -nH {} \; -or -iname '*.xml'  -exec grep "$1" -nH {} \; -or -iname '*.xsl*' -exec grep "$1" -nH {} \;  -or -iname '*.xsd' -exec grep "$1" -nH {}  \;  -or -iname '*.js*' -exec grep "$1" -nH {} \; -or -iname '*.esp' -exec grep "$1" -nH {} \; -or -iname '*.ecm' -exec grep "$1" -nH {} \; -or -iname '*.tpp' -exec grep "$1" -nH {} \; -or -iname '*.in' -exec grep "$1" -nH {} \; -or -iname '*.htm*' -exec grep "$1" -nH {} \;
+    find ./ -iname '*.cpp'  -exec grep "$1" -nHq {} \; -or -iname '*.h' -exec grep "$1" -nHq {} \; -or -iname '*.ipp'  -exec grep "$1" -nHq {} \; -or -iname '*.hpp'  -exec grep "$1" -nHq {} \; -or -iname '*.c'  -exec grep "$1" -nHq {} \; -or -iname '*.xml'  -exec grep "$1" -nHq {} \; -or -iname '*.xsl*' -exec grep "$1" -nHq {} \;  -or -iname '*.xsd' -exec grep "$1" -nHq {}  \;  -or -iname '*.js*' -exec grep "$1" -nHq {} \; -or -iname '*.esp' -exec grep "$1" -nHq {} \; -or -iname '*.ecm' -exec grep "$1" -nHq {} \; -or -iname '*.tpp' -exec grep "$1" -nHq {} \; -or -iname '*.in' -exec grep "$1" -nHq {} \; -or -iname '*.htm*' -exec grep "$1" -nHq {} \;
 
 fi
 }
 
 
-ffi()
+fffi()
 {
 if [ -z "$1" ]
 then
     echo "No search key."
 else
 
-    find ./ -iname '*.cpp'  -exec grep "$1" -inH {} \;   -or -iname '*.h' -exec grep "$1" -inH {} \; -or -iname '*.ipp'  -exec grep "$1" -inH {} \; -or -iname '*.hpp'  -exec grep "$1" -inH {} \; -or -iname '*.c'  -exec grep "$1" -inH {} \; -or -iname '*.xml'  -exec grep "$1" -inH {} \; -or -iname '*.xsl*' -exec grep "$1" -inH {} \;  -or -iname '*.xsd' -exec grep "$1" -inH {}  \; -or -iname '*.js*' -exec grep "$1" -inH {} \; -or -iname '*.esp' -exec grep "$1" -inH {} \; -or -iname '*.ecm' -exec grep "$1" -inH {} \; -or -iname '*.tpp' -exec grep "$1" -inH {} \; -or -iname '*.in' -exec grep "$1" -inH {} \; -or -iname '*.htm*' -exec grep "$1" -inH {} \;
+    find ./ -iname '*.cpp'  -exec grep "$1" -inHq {} \;   -or -iname '*.h' -exec grep "$1" -inHq {} \; -or -iname '*.ipp'  -exec grep "$1" -inHq {} \; -or -iname '*.hpp'  -exec grep "$1" -inHq {} \; -or -iname '*.c'  -exec grep "$1" -inHq {} \; -or -iname '*.xml'  -exec grep "$1" -inHq {} \; -or -iname '*.xsl*' -exec grep "$1" -inHq {} \;  -or -iname '*.xsd' -exec grep "$1" -inHq {}  \; -or -iname '*.js*' -exec grep "$1" -inHq {} \; -or -iname '*.esp' -exec grep "$1" -inHq {} \; -or -iname '*.ecm' -exec grep "$1" -inHq {} \; -or -iname '*.tpp' -exec grep "$1" -inHq {} \; -or -iname '*.in' -exec grep "$1" -inHq {} \; -or -iname '*.htm*' -exec grep "$1" -inHq {} \;
 
 fi
 }
+
+
+
 
 fffc()
 {
